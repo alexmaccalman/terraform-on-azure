@@ -45,7 +45,7 @@ data "template_file" "init" {
     DNS_Server1 = "10.0.0.1"
     DNS_Server2 = "10.0.0.2"
   }
-
+}
 resource "azurerm_windows_virtual_machine" "vm" {
   name                  = "vmterraform"
   location              = azurerm_resource_group.rg.location
